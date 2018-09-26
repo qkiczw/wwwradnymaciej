@@ -6,6 +6,7 @@ $background-color: #d7e1ed;
 $background-color-light-blue: #035a9f;
 $background-color-white: #ffffff;
 $section-skew: skewY(5deg);
+$h1: 30px;
 
 // mixins
 @mixin section-skew {
@@ -42,15 +43,21 @@ header{
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        .x-mark-border {
-            border: 1px solid black;
+        .x-mark-border{
+            border: 2px solid black;
             width: 30px;
             height: 30px;
             margin-right: 20px;
             .x-mark{
                 transform: scale(1.7);
-                }
+                animation-name: xmark-scale;
+                animation-duration: 2s;
             }
+        }
+        h1{
+            font-size: $h1;
+        }
+
     }
     .photo{
         padding: 0;
@@ -66,6 +73,12 @@ header{
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+        span{
+            border-left: 2px solid white;
+            padding-left: 10px;
+        }
     }
     .candidate-slogan{
         @include section-skew;
@@ -76,8 +89,16 @@ header{
         background-color: $background-color-white;
         color: $font-color-secondary;
         text-align: center;
-        h3{
+        h2{
             font-weight: bold;
+            padding: 5px;
         }
     }
+}
+
+
+/*Anmations*/
+@keyframes xmark-scale {
+    from {opacity: 0; transform: scale(0.1)}
+    to {opacity: 1; transform: scale(1.7)}
 }

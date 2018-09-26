@@ -25,12 +25,16 @@ header {
     align-items: center;
     margin-top: 50px; }
     header .title .x-mark-border {
-      border: 1px solid black;
+      border: 2px solid black;
       width: 30px;
       height: 30px;
       margin-right: 20px; }
       header .title .x-mark-border .x-mark {
-        transform: scale(1.7); }
+        transform: scale(1.7);
+        animation-name: xmark-scale;
+        animation-duration: 2s; }
+    header .title h1 {
+      font-size: 30px; }
   header .photo {
     padding: 0; }
     header .photo figure {
@@ -44,7 +48,12 @@ header {
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px; }
+    header .candidate-info span {
+      border-left: 2px solid white;
+      padding-left: 10px; }
   header .candidate-slogan {
     position: relative;
     top: -30px;
@@ -56,5 +65,15 @@ header {
     background-color: #ffffff;
     color: #004f8f;
     text-align: center; }
-    header .candidate-slogan h3 {
-      font-weight: bold; }
+    header .candidate-slogan h2 {
+      font-weight: bold;
+      padding: 5px; }
+
+/*Anmations*/
+@keyframes xmark-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.1); }
+  to {
+    opacity: 1;
+    transform: scale(1.7); } }
