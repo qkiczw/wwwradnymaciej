@@ -1,0 +1,44 @@
+/*  Variables */
+$font-regular: 'Lato', sans-serif;
+$background-color: #d7e1ed;
+
+
+/*remove margins and padding from left and right side of site*/
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0
+}
+
+body{
+    font-family: $font-regular;
+}
+.menu{
+    background-color: $background-color;
+}
+header{
+    background-color: $background-color;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .x-mark-border {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 20px;
+    .x-mark{
+        transform: scale(1.7);
+    }
+}
+
+}
