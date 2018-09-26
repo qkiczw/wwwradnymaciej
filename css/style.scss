@@ -15,6 +15,9 @@ $h1: 30px;
     top: -30px;
     transform: $section-skew;
 }
+@mixin section-content-skew {
+    transform: skewY(-5deg);
+}
 
 /*remove margins and padding from left and right side of site*/
 .row{
@@ -95,7 +98,22 @@ header{
         }
     }
 }
-
+.about-me{
+    @include section-skew;
+    min-height: 300px;
+    background-color: $background-color-light-blue;
+    .about-me-content{
+        @include section-content-skew;
+        text-align: center;
+        width: 200px;
+    }
+}
+.section-title{
+    color: $font-color-primary;
+    border: 1px solid $font-color-primary;
+    margin-top: 75px;
+    font-size: 20px;
+}
 
 /*Anmations*/
 @keyframes xmark-scale {

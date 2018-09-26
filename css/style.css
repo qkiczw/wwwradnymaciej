@@ -69,6 +69,23 @@ header {
       font-weight: bold;
       padding: 5px; }
 
+.about-me {
+  position: relative;
+  top: -30px;
+  transform: skewY(5deg);
+  min-height: 300px;
+  background-color: #035a9f; }
+  .about-me .about-me-content {
+    transform: skewY(-5deg);
+    text-align: center;
+    width: 200px; }
+
+.section-title {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 75px;
+  font-size: 20px; }
+
 /*Anmations*/
 @keyframes xmark-scale {
   from {
