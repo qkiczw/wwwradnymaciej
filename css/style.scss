@@ -1,7 +1,20 @@
 /*  Variables */
 $font-regular: 'Lato', sans-serif;
+$font-color-primary: #ffffff;
+$font-color-secondary: #004f8f;
 $background-color: #d7e1ed;
+$background-color-light-blue: #035a9f;
+$background-color-white: #ffffff;
+$section-skew: skewY(5deg);
+$h1: 30px;
 
+// mixins
+@mixin section-skew {
+    // skew section
+    position: relative;
+    top: -30px;
+    transform: $section-skew;
+}
 
 /*remove margins and padding from left and right side of site*/
 .row{
@@ -19,26 +32,73 @@ body{
     font-family: $font-regular;
 }
 .menu{
+    text-align: center;
     background-color: $background-color;
 }
 header{
     background-color: $background-color;
-}
-.title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    .x-mark-border {
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    
-    margin-right: 20px;
-    .x-mark{
-        transform: scale(1.7);
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        .x-mark-border{
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            .x-mark{
+                transform: scale(1.7);
+                animation-name: xmark-scale;
+                animation-duration: 2s;
+            }
+        }
+        h1{
+            font-size: $h1;
+        }
+
+    }
+    .photo{
+        padding: 0;
+        figure{
+            margin: 0;
+        }
+    }
+    .candidate-info{
+        @include section-skew;
+        background-color: $background-color-light-blue;
+        height: 100px;
+        color: $font-color-primary;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+        span{
+            border-left: 2px solid white;
+            padding-left: 10px;
+        }
+    }
+    .candidate-slogan{
+        @include section-skew;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $background-color-white;
+        color: $font-color-secondary;
+        text-align: center;
+        h2{
+            font-weight: bold;
+            padding: 5px;
+        }
     }
 }
 
+
+/*Anmations*/
+@keyframes xmark-scale {
+    from {opacity: 0; transform: scale(0.1)}
+    to {opacity: 1; transform: scale(1.7)}
 }
