@@ -10,7 +10,8 @@
   margin: 0; }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-size: 17px; }
 
 .menu {
   text-align: center;
@@ -50,7 +51,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10px; }
+    padding-right: 5px; }
     header .candidate-info span {
       border-left: 2px solid white;
       padding-left: 10px; }
@@ -68,6 +69,34 @@ header {
     header .candidate-slogan h2 {
       font-weight: bold;
       padding: 5px; }
+
+.about-me {
+  position: relative;
+  top: -30px;
+  transform: skewY(5deg);
+  min-height: 300px;
+  background-color: #035a9f;
+  color: #ffffff; }
+  .about-me .about-me-content {
+    transform: skewY(-5deg);
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+
+.section-title {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  width: 200px; }
+
+.section-content {
+  margin-bottom: 50px; }
+  .section-content img {
+    border: 2px solid #ffffff; }
+  .section-content p {
+    margin-bottom: 50px; }
 
 /*Anmations*/
 @keyframes xmark-scale {

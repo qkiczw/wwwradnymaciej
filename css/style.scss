@@ -15,6 +15,9 @@ $h1: 30px;
     top: -30px;
     transform: $section-skew;
 }
+@mixin section-content-skew {
+    transform: skewY(-5deg);
+}
 
 /*remove margins and padding from left and right side of site*/
 .row{
@@ -30,6 +33,7 @@ $h1: 30px;
 
 body{
     font-family: $font-regular;
+    font-size: 17px;
 }
 .menu{
     text-align: center;
@@ -74,7 +78,7 @@ header{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-right: 10px;
+        padding-right: 5px;
         span{
             border-left: 2px solid white;
             padding-left: 10px;
@@ -95,7 +99,36 @@ header{
         }
     }
 }
-
+.about-me{
+    @include section-skew;
+    min-height: 300px;
+    background-color: $background-color-light-blue;
+    color: $font-color-primary;
+    .about-me-content{
+        @include section-content-skew;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+.section-title{
+    
+    color: $font-color-primary;
+    border: 1px solid $font-color-primary;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    width: 200px;
+}
+.section-content{
+    margin-bottom: 50px;
+    img{
+        border: 2px solid $font-color-primary;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}
 
 /*Anmations*/
 @keyframes xmark-scale {
