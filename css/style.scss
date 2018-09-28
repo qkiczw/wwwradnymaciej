@@ -4,6 +4,7 @@ $font-color-primary: #ffffff;
 $font-color-secondary: #004f8f;
 $background-color-header: #d7e1ed;
 $background-color-light-blue: #035a9f;
+$background-color-blue:  #004f8f;
 $background-color-white: #ffffff;
 $section-skew: skewY(5deg);
 $h1: 30px;
@@ -126,6 +127,10 @@ header{
      @include section-skew;
     background-color: $background-color-light-blue;
     color: $font-color-primary;
+    a, a:focus, a:visited, a:link{
+    color: $font-color-primary;
+    text-decoration: none;
+}
     .contact-content{
         @include section-content-skew;
         display: flex;
@@ -140,6 +145,15 @@ header{
         }
     }
     }
+}
+footer{
+    position: relative;
+    top: -50px;
+    padding: 20px;
+    background-color: $background-color-blue;
+    color: $font-color-primary;
+    text-align: center;
+    font-size: 15px;
 }
 .section-title{
     color: $font-color-primary;
