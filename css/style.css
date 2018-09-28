@@ -93,6 +93,22 @@ header {
     display: flex;
     justify-content: center; }
 
+.contact {
+  position: relative;
+  top: -30px;
+  transform: skewY(5deg);
+  background-color: #035a9f;
+  color: #ffffff; }
+  .contact .contact-content {
+    transform: skewY(-5deg);
+    display: flex;
+    justify-content: center; }
+  .contact .contact-icons .contact-icon {
+    display: flex;
+    align-items: center; }
+    .contact .contact-icons .contact-icon i {
+      padding-right: 15px; }
+
 .section-title {
   color: #ffffff;
   border: 1px solid #ffffff;

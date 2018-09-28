@@ -122,6 +122,25 @@ header{
     }
 
 }
+.contact{
+     @include section-skew;
+    background-color: $background-color-light-blue;
+    color: $font-color-primary;
+    .contact-content{
+        @include section-content-skew;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-icons{
+        .contact-icon{
+            display: flex;
+            align-items: center;
+        i{
+            padding-right: 15px;
+        }
+    }
+    }
+}
 .section-title{
     color: $font-color-primary;
     border: 1px solid $font-color-primary;
