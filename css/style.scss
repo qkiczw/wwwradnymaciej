@@ -111,14 +111,36 @@ header{
         justify-content: center;
     }
 }
+.election-program{
+    @include section-skew;
+    background-color: $background-color-white;
+    color: $font-color-secondary;
+    .election-program-content{
+        @include section-content-skew;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
 .section-title{
-    
     color: $font-color-primary;
     border: 1px solid $font-color-primary;
     margin-top: 75px;
     margin-bottom: 50px;
+    padding: 10px 20px;
     font-size: 20px;
-    width: 200px;
+    font-weight: bold;
+}
+.section-title-blue{
+    color: $font-color-secondary;
+    border: 1px solid $font-color-secondary;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 .section-content{
     margin-bottom: 50px;
