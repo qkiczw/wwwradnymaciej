@@ -124,7 +124,8 @@ header{
 
 }
 .contact{
-     @include section-skew;
+    @include section-skew;
+    position: relative;
     background-color: $background-color-light-blue;
     color: $font-color-primary;
     a, a:focus, a:visited, a:link{
@@ -146,9 +147,14 @@ header{
     }
     }
 }
-footer{
+.footer{
     position: relative;
-    top: -50px;
+    background-color: $background-color-blue;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
     padding: 20px;
     background-color: $background-color-blue;
     color: $font-color-primary;
