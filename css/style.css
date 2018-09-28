@@ -97,6 +97,7 @@ header {
   position: relative;
   top: -30px;
   transform: skewY(5deg);
+  position: relative;
   background-color: #035a9f;
   color: #ffffff; }
   .contact a, .contact a:focus, .contact a:visited, .contact a:link {
@@ -112,9 +113,14 @@ header {
     .contact .contact-icons .contact-icon i {
       padding-right: 15px; }
 
-footer {
+.footer {
   position: relative;
-  top: -50px;
+  background-color: #004f8f; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
   padding: 20px;
   background-color: #004f8f;
   color: #ffffff;
