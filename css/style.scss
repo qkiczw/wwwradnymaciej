@@ -2,7 +2,7 @@
 $font-regular: 'Lato', sans-serif;
 $font-color-primary: #ffffff;
 $font-color-secondary: #004f8f;
-$background-color: #d7e1ed;
+$background-color-header: #d7e1ed;
 $background-color-light-blue: #035a9f;
 $background-color-white: #ffffff;
 $section-skew: skewY(5deg);
@@ -35,12 +35,11 @@ body{
     font-family: $font-regular;
     font-size: 17px;
 }
-.menu{
-    text-align: center;
-    background-color: $background-color;
+.navbar{
+    background-color: $background-color-header;
 }
 header{
-    background-color: $background-color;
+    background-color: $background-color-header;
     .title{
         display: flex;
         flex-direction: row;
