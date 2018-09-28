@@ -99,6 +99,9 @@ header {
   transform: skewY(5deg);
   background-color: #035a9f;
   color: #ffffff; }
+  .contact a, .contact a:focus, .contact a:visited, .contact a:link {
+    color: #ffffff;
+    text-decoration: none; }
   .contact .contact-content {
     transform: skewY(-5deg);
     display: flex;
@@ -108,6 +111,15 @@ header {
     align-items: center; }
     .contact .contact-icons .contact-icon i {
       padding-right: 15px; }
+
+footer {
+  position: relative;
+  top: -50px;
+  padding: 20px;
+  background-color: #004f8f;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px; }
 
 .section-title {
   color: #ffffff;
