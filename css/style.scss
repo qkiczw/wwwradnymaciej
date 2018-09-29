@@ -6,7 +6,8 @@ $background-color-header: #d7e1ed;
 $background-color-light-blue: #035a9f;
 $background-color-blue:  #004f8f;
 $background-color-white: #ffffff;
-$section-skew: skewY(5deg);
+$section-skew: skewY(4deg);
+$content-skew: skewY(-4deg);
 $h1: 30px;
 
 // mixins
@@ -17,7 +18,7 @@ $h1: 30px;
     transform: $section-skew;
 }
 @mixin section-content-skew {
-    transform: skewY(-5deg);
+    transform: $content-skew;
 }
 
 /*remove margins and padding from left and right side of site*/
@@ -67,6 +68,9 @@ header{
         padding: 0;
         figure{
             margin: 0;
+            img{
+                width: 100%;
+            }
         }
     }
     .candidate-info{
@@ -194,4 +198,19 @@ footer{
 @keyframes xmark-scale {
     from {opacity: 0; transform: scale(0.1)}
     to {opacity: 1; transform: scale(1.7)}
+}
+
+@media (min-width: 768px) {
+    header{
+        .candidate-info, .candidate-slogan{
+            transform: skewY(0);
+            background: none;
+            color: $font-color-secondary;
+            top: 20px;
+            span{
+            border-left: 2px solid $font-color-secondary;
+            padding-left: 10px;
+        }
+        } 
+    }
 }

@@ -39,10 +39,12 @@ header {
     padding: 0; }
     header .photo figure {
       margin: 0; }
+      header .photo figure img {
+        width: 100%; }
   header .candidate-info {
     position: relative;
     top: -30px;
-    transform: skewY(5deg);
+    transform: skewY(4deg);
     background-color: #035a9f;
     height: 100px;
     color: #ffffff;
@@ -57,7 +59,7 @@ header {
   header .candidate-slogan {
     position: relative;
     top: -30px;
-    transform: skewY(5deg);
+    transform: skewY(4deg);
     min-height: 100px;
     display: flex;
     flex-direction: column;
@@ -72,12 +74,12 @@ header {
 .about-me {
   position: relative;
   top: -30px;
-  transform: skewY(5deg);
+  transform: skewY(4deg);
   min-height: 300px;
   background-color: #035a9f;
   color: #ffffff; }
   .about-me .about-me-content {
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
     text-align: center;
     display: flex;
     justify-content: center; }
@@ -85,18 +87,18 @@ header {
 .election-program {
   position: relative;
   top: -30px;
-  transform: skewY(5deg);
+  transform: skewY(4deg);
   background-color: #ffffff;
   color: #004f8f; }
   .election-program .election-program-content {
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
     display: flex;
     justify-content: center; }
 
 .contact {
   position: relative;
   top: -30px;
-  transform: skewY(5deg);
+  transform: skewY(4deg);
   position: relative;
   background-color: #035a9f;
   color: #ffffff; }
@@ -104,7 +106,7 @@ header {
     color: #ffffff;
     text-decoration: none; }
   .contact .contact-content {
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
     display: flex;
     justify-content: center; }
   .contact .contact-icons .contact-icon {
@@ -160,3 +162,13 @@ footer {
   to {
     opacity: 1;
     transform: scale(1.7); } }
+
+@media (min-width: 768px) {
+  header .candidate-info, header .candidate-slogan {
+    transform: skewY(0);
+    background: none;
+    color: #004f8f;
+    top: 20px; }
+    header .candidate-info span, header .candidate-slogan span {
+      border-left: 2px solid #004f8f;
+      padding-left: 10px; } }
