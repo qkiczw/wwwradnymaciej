@@ -165,8 +165,10 @@ footer {
 
 /* Media queries*/
 @media (min-width: 768px) {
-  header .title h1 {
-    font-size: 2.5rem; }
+  header .title {
+    margin-top: 20px; }
+    header .title h1 {
+      font-size: 2.5rem; }
   header .photo figure img {
     width: 100%;
     position: relative;
@@ -196,4 +198,10 @@ footer {
   .section-content .img-col-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .contact-icons {
+    display: flex;
+    justify-content: space-around; }
+  footer {
+    bottom: -5px;
+    padding: 25px; } }
