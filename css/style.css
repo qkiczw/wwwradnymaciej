@@ -163,12 +163,37 @@ footer {
     opacity: 1;
     transform: scale(1.7); } }
 
+/* Media queries*/
 @media (min-width: 768px) {
+  header .title h1 {
+    font-size: 2.5rem; }
+  header .photo figure img {
+    width: 100%;
+    position: relative;
+    top: 25px; }
+  header .candidate-info {
+    margin-top: 25%; }
   header .candidate-info, header .candidate-slogan {
     transform: skewY(0);
     background: none;
     color: #004f8f;
     top: 20px; }
+    header .candidate-info h3, header .candidate-slogan h3 {
+      text-align: center; }
     header .candidate-info span, header .candidate-slogan span {
-      border-left: 2px solid #004f8f;
-      padding-left: 10px; } }
+      width: 33%;
+      border: none; }
+      header .candidate-info span h3, header .candidate-slogan span h3 {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        background-color: #004f8f;
+        border-radius: 5px;
+        padding: 20px 5px; }
+  .section-content .img-col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
