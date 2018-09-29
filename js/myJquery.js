@@ -10,6 +10,15 @@ $(document).ready(function () {
     }
     $getLink.on('click', navHide);
 
+    //odejmuje 100 px od sekcji do której przenosi # po id
+    function mobileWidth() {
+        if ($(window).width() <500){
+            return 200;
+        } else {
+            return 0;
+        }
+    }
+
     function scrollToSection() {
         const animationTime = 700;
         const anchor = $(this).attr('href');
@@ -19,7 +28,7 @@ $(document).ready(function () {
             .addClass('active')
             .siblings()
             .removeClass('active');
-        $page.animate({ scrollTop: $(anchor).offset().top }, animationTime);
+        $page.animate({ scrollTop: $(anchor).offset().top - mobileWidth()}, animationTime);
     }
     $navLinks.on('click', scrollToSection);
 });
