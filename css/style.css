@@ -38,6 +38,7 @@ header {
   header .photo {
     padding: 0; }
     header .photo figure {
+      position: relative;
       margin: 0; }
       header .photo figure img {
         width: 100%; }
@@ -220,16 +221,32 @@ footer {
     display: none; }
   header .title {
     margin-top: 20px; }
+    header .title .x-mark-border {
+      border: 3px solid black;
+      width: 40px;
+      height: 40px;
+      margin-right: 30px; }
     header .title h1 {
-      font-size: 3rem; }
+      font-size: 3.5rem; }
   header .photo figure img {
     width: 100%;
     position: relative;
     top: 50px; }
   header .candidate-info h3, header .candidate-slogan h3 {
     font-size: 2rem; }
+  header .candidate-info h4, header .candidate-slogan h4 {
+    font-size: 1.7rem; }
   header .candidate-info span, header .candidate-slogan span {
     display: flex;
     justify-content: center; }
     header .candidate-info span .candidate-election-number, header .candidate-slogan span .candidate-election-number {
-      width: 50%; } }
+      padding: 15px 15px;
+      font-size: 1.6rem; } }
+
+@media (min-width: 1366px) {
+  header {
+    height: 100vh; }
+    header .photo {
+      transform: translateY(-100px); }
+  .about-me .family-pic {
+    max-width: 450px; } }

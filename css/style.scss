@@ -67,6 +67,7 @@ header{
     .photo{
         padding: 0;
         figure{
+            position: relative;
             margin: 0;
             img{
                 width: 100%;
@@ -284,9 +285,15 @@ footer{
     }
     header{
         .title{
+            .x-mark-border{
+            border: 3px solid black;
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+        }
             margin-top: 20px;
             h1{
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
         }
         .photo{
@@ -302,13 +309,36 @@ footer{
             h3{
                 font-size: 2rem;
             }
+            h4{
+                font-size: 1.7rem;
+            }
             span{
                 display: flex;
                 justify-content: center;
                 .candidate-election-number{
-                width: 50%;
+                // width: 80%;
+                padding: 15px 15px;
+                font-size: 1.6rem;
             }
             }
         }
     }
+}
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 1366px) {
+    
+    header{
+        height: 100vh;
+        .photo{
+            transform: translateY(-100px);
+        }
+    }
+    .about-me{
+        .family-pic{
+            max-width: 450px;
+        }
+    }
+
 }
