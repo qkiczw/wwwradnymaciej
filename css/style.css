@@ -137,21 +137,23 @@ footer {
 
 .section-title {
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   margin-top: 75px;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .section-title-blue {
   color: #004f8f;
-  border: 1px solid #004f8f;
+  border-bottom: 2px solid #004f8f;
   margin-top: 75px;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .section-content {
   margin-bottom: 50px; }
@@ -251,6 +253,8 @@ footer {
       font-size: 1.6rem; } }
 
 @media (min-width: 1366px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 20px; }
   header {
     height: 100vh; }
     header .photo {
