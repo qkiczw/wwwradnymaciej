@@ -12,8 +12,9 @@ $(document).ready(function () {
 
     //odejmuje 100 px od sekcji do której przenosi # po id
     function mobileWidth() {
-        if ($(window).width() <500){
-            return 200;
+        const windowWidth = $(window).width();
+        if ( windowWidth < 500){
+            return 100;
         } else {
             return 0;
         }
