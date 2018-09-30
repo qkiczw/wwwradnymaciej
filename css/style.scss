@@ -114,6 +114,7 @@ header{
         text-align: center;
         display: flex;
         justify-content: center;
+        padding-bottom: 20px;
     }
 }
 .election-program{
@@ -146,10 +147,15 @@ header{
         .contact-icon{
             display: flex;
             align-items: center;
-        i{
-            padding-right: 15px;
+            a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                i{
+                    padding-right: 15px;
+                }
+            }
         }
-    }
     }
 }
 .footer{
@@ -220,7 +226,10 @@ footer{
                 }
         }
         .candidate-info{
-            margin-top: 25%;
+            margin-top: 5%;
+        }
+        .candidate-slogan{
+            margin-top: 10%;
         }
         .candidate-info, .candidate-slogan{
             transform: skewY(0);
@@ -230,13 +239,16 @@ footer{
             h3{
                 text-align: center;
             }
+            h2{
+                font-size: 3rem;
+            }
             span{
             width: 33%;
             border:none;
             h3{
                 margin-bottom: 0;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: bold;
                 color: #ffffff;
                 border: 2px solid #ffffff;
@@ -261,5 +273,42 @@ footer{
     footer{
         bottom: -5px;
         padding: 25px;
+    }
+}
+@media (min-width: 992px) { 
+    nav{
+        .navbar-brand{
+            display: none;
+
+        }
+    }
+    header{
+        .title{
+            margin-top: 20px;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .photo{
+            figure{
+                img{
+                    width: 100%;
+                    position: relative;
+                    top: 50px;
+                    }
+                }
+        }
+        .candidate-info, .candidate-slogan{
+            h3{
+                font-size: 2rem;
+            }
+            span{
+                display: flex;
+                justify-content: center;
+                .candidate-election-number{
+                width: 50%;
+            }
+            }
+        }
     }
 }
