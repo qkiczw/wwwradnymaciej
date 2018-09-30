@@ -6,6 +6,7 @@ $background-color-header: #d7e1ed;
 $background-color-light-blue: #035a9f;
 $background-color-blue:  #004f8f;
 $background-color-white: #ffffff;
+$scroll-btn-color: #002542;
 $section-skew: skewY(4deg);
 $content-skew: skewY(-4deg);
 $h1: 30px;
@@ -200,6 +201,13 @@ footer{
     p{
         margin-bottom: 50px;
     }
+}
+.scroll-to-top-btn{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    color: $scroll-btn-color;
+    display: none;
 }
 
 /*Anmations*/

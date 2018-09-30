@@ -4,6 +4,9 @@ $(document).ready(function () {
     const $getNavCollapse = $('.navbar-collapse');
     const $navbar = $('.navbar-nav');
     const $navLinks = $navbar.find('a');
+    const $window = $(window);
+    const $scrollToTopBtn = $('.scroll-to-top-btn');
+
 
     function navHide() {
         $getNavCollapse.collapse('hide');
@@ -35,5 +38,20 @@ $(document).ready(function () {
         $page.animate({ scrollTop: $(anchor).offset().top - mobileWidth()}, animationTime);
     }
     $navLinks.on('click', scrollToSection);
+
+
+    function toggleScrollToTopVisibility() {
+        if ($(this).scrollTop() > 500) {
+            $scrollToTopBtn.fadeIn(750);
+        } else {
+            $scrollToTopBtn.fadeOut();
+        }
+    };
+    $window.on('scroll', toggleScrollToTopVisibility);
+
+    function scrollMeToTop() {
+        $page.animate({ scrollTop: 0 }, 1000)
+    }
+    $scrollToTopBtn.on('click', scrollMeToTop);
 });
 

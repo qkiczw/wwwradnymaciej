@@ -160,6 +160,13 @@ footer {
   .section-content p {
     margin-bottom: 50px; }
 
+.scroll-to-top-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  color: #002542;
+  display: none; }
+
 /*Anmations*/
 @keyframes xmark-scale {
   from {
