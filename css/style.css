@@ -263,6 +263,8 @@ footer {
     height: 100vh; }
     header .photo {
       transform: translateY(-100px); }
+    header .candidate-info span {
+      padding-top: 30px; }
     header .candidate-election-number {
       transform: scale(1.5); }
   .about-me .family-pic {
