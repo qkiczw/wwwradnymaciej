@@ -127,14 +127,18 @@ header {
   transform: skewY(4deg);
   background-color: #035a9f; }
   .footer footer {
-    text-align: center;
     transform: skewY(-4deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #004f8f;
     color: #ffffff;
-    height: 50px;
+    height: 70px;
     position: relative;
-    top: 20px;
-    padding-top: 10px; }
+    top: 30px;
+    text-align: center; }
+    .footer footer p {
+      margin: 0; }
 
 .section-title {
   color: #ffffff;
