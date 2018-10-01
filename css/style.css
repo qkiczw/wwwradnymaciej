@@ -264,7 +264,12 @@ footer {
   header .photo {
     transform: translateY(-100px); }
   header .candidate-info span {
-    padding-top: 30px; }
+    padding-top: 50px; }
+  header .candidate-slogan h2, header h4 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    transform: scale(1.5); }
   header .candidate-election-number {
     transform: scale(1.5); }
   .about-me {
@@ -278,4 +283,8 @@ footer {
 
 @media (min-width: 1920px) {
   .about-me {
-    top: -220px; } }
+    top: -220px; }
+  .candidate-slogan {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold; } }

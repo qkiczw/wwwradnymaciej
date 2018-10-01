@@ -357,10 +357,16 @@ footer{
         }
         .candidate-info{
             span{
-                padding-top: 30px;
+                padding-top: 50px;
 
             }
         }
+        .candidate-slogan h2, h4{
+        text-transform: uppercase;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        transform: scale(1.5);
+    }
         .candidate-election-number{
             transform: scale(1.5);
         }
@@ -382,4 +388,10 @@ footer{
     .about-me{
         top: -220px;
     }
+    .candidate-slogan{
+        text-transform: uppercase;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+    }
+    
 }
