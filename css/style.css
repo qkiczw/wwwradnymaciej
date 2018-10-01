@@ -194,7 +194,16 @@ footer {
   header .candidate-info {
     margin-top: 5%; }
   header .candidate-slogan {
-    margin-top: 10%; }
+    margin-top: 10%;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold; }
+    header .candidate-slogan h2 {
+      font-size: 4.5rem;
+      padding: 0; }
+    header .candidate-slogan h4 {
+      font-size: 2.1rem;
+      font-weight: bold; }
   header .candidate-info, header .candidate-slogan {
     transform: skewY(0);
     background: none;
@@ -202,8 +211,6 @@ footer {
     top: 20px; }
     header .candidate-info h3, header .candidate-slogan h3 {
       text-align: center; }
-    header .candidate-info h2, header .candidate-slogan h2 {
-      font-size: 3rem; }
     header .candidate-info span, header .candidate-slogan span {
       width: 33%;
       border: none; }
