@@ -264,6 +264,13 @@ footer {
       padding: 15px 15px;
       font-size: 2rem; } }
 
+@media (min-width: 1200px) {
+  .candidate-slogan h2, .candidate-slogan h4 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    transform: scale(1.5); } }
+
 @media (min-width: 1366px) {
   .navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
