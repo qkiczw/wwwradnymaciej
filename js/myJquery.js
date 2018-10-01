@@ -7,7 +7,6 @@ $(document).ready(function () {
     const $window = $(window);
     const $scrollToTopBtn = $('.scroll-to-top-btn');
 
-
     function navHide() {
         $getNavCollapse.collapse('hide');
     }
@@ -53,5 +52,7 @@ $(document).ready(function () {
         $page.animate({ scrollTop: 0 }, 1000)
     }
     $scrollToTopBtn.on('click', scrollMeToTop);
+
+    $(".candidate-slogan").animate({ right: '0' }, 800);
 });
 

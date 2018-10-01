@@ -194,6 +194,7 @@ footer {
   header .candidate-info {
     margin-top: 5%; }
   header .candidate-slogan {
+    right: 1500px;
     margin-top: 10%;
     text-transform: uppercase;
     font-family: 'Amatic SC', cursive;
