@@ -35,6 +35,7 @@ $h1: 30px;
 }
 
 body{
+    background-color: $background-color-light-blue;
     font-family: $font-regular;
     font-size: 17px;
 }
@@ -132,19 +133,11 @@ header{
 
 }
 .contact{
+    z-index: 1;
     @include section-skew;
     position: relative;
     background-color: $background-color-light-blue;
     color: $font-color-primary;
-    // .contact-skew-hider{
-    //     position: absolute;
-    //     bottom: -30px;
-    //     @include section-content-skew;
-    //     width: 100%;
-    //     height: 100px;
-    //     background-color: $background-color-light-blue;
-
-    // }
     a, a:focus, a:visited, a:link{
     color: $font-color-primary;
     text-decoration: none;
@@ -169,26 +162,22 @@ header{
         }
     }
 }
-.footer{
-    @include section-skew;
-    background-color: $background-color-light-blue;
-    footer{
-        @include section-content-skew;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $background-color-blue;
-        color: $font-color-primary;
-        height: 70px;
-        position: relative;
-        top: 30px;
-        text-align: center;
-        p{
-            margin: 0;
-        }
+footer{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color-blue;
+    color: $font-color-primary;
+    height: 70px;
+    text-align: center;
+     p{
+        margin: 0;
     }
-
 }
+
+
 
 .section-title{
     color: $font-color-primary;
@@ -211,7 +200,7 @@ header{
     text-transform: uppercase;
 }
 .section-content{
-    margin-bottom: 50px;
+    padding-bottom: 75px;
     img{
         border: 2px solid $font-color-primary;
     }
@@ -221,6 +210,7 @@ header{
 }
 .scroll-to-top-btn{
     position: fixed;
+    z-index: 100;
     right: 10px;
     bottom: 20px;
     color: $scroll-btn-color;

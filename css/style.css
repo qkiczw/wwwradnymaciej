@@ -10,6 +10,7 @@
   margin: 0; }
 
 body {
+  background-color: #035a9f;
   font-family: "Lato", sans-serif;
   font-size: 17px; }
 
@@ -98,6 +99,7 @@ header {
     justify-content: center; }
 
 .contact {
+  z-index: 1;
   position: relative;
   top: -30px;
   transform: skewY(4deg);
@@ -121,24 +123,18 @@ header {
       .contact .contact-icons .contact-icon a i {
         padding-right: 15px; }
 
-.footer {
+footer {
+  z-index: 2;
   position: relative;
-  top: -30px;
-  transform: skewY(4deg);
-  background-color: #035a9f; }
-  .footer footer {
-    transform: skewY(-4deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #004f8f;
-    color: #ffffff;
-    height: 70px;
-    position: relative;
-    top: 30px;
-    text-align: center; }
-    .footer footer p {
-      margin: 0; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004f8f;
+  color: #ffffff;
+  height: 70px;
+  text-align: center; }
+  footer p {
+    margin: 0; }
 
 .section-title {
   color: #ffffff;
@@ -161,7 +157,7 @@ header {
   text-transform: uppercase; }
 
 .section-content {
-  margin-bottom: 50px; }
+  padding-bottom: 75px; }
   .section-content img {
     border: 2px solid #ffffff; }
   .section-content p {
@@ -169,6 +165,7 @@ header {
 
 .scroll-to-top-btn {
   position: fixed;
+  z-index: 100;
   right: 10px;
   bottom: 20px;
   color: #002542;
