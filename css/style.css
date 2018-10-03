@@ -79,14 +79,14 @@ header {
   transform: skewY(4deg);
   min-height: 300px;
   background-color: #035a9f;
-  color: #ffffff; }
+  color: #ffffff;
+  overflow: hidden; }
   .about-me .about-me-content {
     transform: skewY(-4deg);
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
-    overflow: hidden; }
+    padding-bottom: 20px; }
     .about-me .about-me-content .family-pic-01 {
       position: relative;
       left: -2000px; }
