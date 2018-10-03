@@ -78,21 +78,26 @@ $(document).ready(function () {
 
     function electionProg01Visibility() {
         if ($(this).scrollTop() > 1600) {
-            $electionProg01.fadeIn(1500);
+            // $electionProg01.fadeIn(1500);
+            $electionProg01.fadeTo(1500, 1)
         }
     };
     $window.on('scroll', electionProg01Visibility);
     
     function electionProg02Visibility() {
         if ($(this).scrollTop() > 1850) {
-            $electionProg02.fadeIn(1500);
+            // $electionProg02.fadeIn(1500);
+            $electionProg02.fadeTo(1500, 1)
+
         }
     };
     $window.on('scroll', electionProg02Visibility);
 
     function electionProg03Visibility() {
         if ($(this).scrollTop() > 2050) {
-            $electionProg03.fadeIn(1500);
+            // $electionProg03.fadeIn(1500);
+            $electionProg03.fadeTo(1500, 1)
+
         }
     };
     $window.on('scroll', electionProg03Visibility);
@@ -103,6 +108,5 @@ $(document).ready(function () {
     };
 
     $window.on('scroll', checkPos);
-
 });
 

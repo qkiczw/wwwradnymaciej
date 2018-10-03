@@ -108,7 +108,7 @@ header {
     display: flex;
     justify-content: center; }
     .election-program .election-program-content .election-prog-01, .election-program .election-program-content .election-prog-02, .election-program .election-program-content .election-prog-03 {
-      display: none; }
+      opacity: 0; }
 
 .contact {
   z-index: 1;
@@ -157,7 +157,8 @@ footer {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .section-title-blue {
   color: #004f8f;
