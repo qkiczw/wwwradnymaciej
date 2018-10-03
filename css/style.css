@@ -85,7 +85,17 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    overflow: hidden; }
+    .about-me .about-me-content .family-pic-01 {
+      position: relative;
+      left: -2000px; }
+    .about-me .about-me-content .family-pic-02 {
+      position: relative;
+      right: -2000px; }
+    .about-me .about-me-content .family-pic-03 {
+      position: relative;
+      left: -2000px; }
 
 .election-program {
   position: relative;

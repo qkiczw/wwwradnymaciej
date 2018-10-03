@@ -118,7 +118,21 @@ header{
         display: flex;
         justify-content: center;
         padding-bottom: 20px;
+        overflow: hidden;
+        .family-pic-01{
+            position: relative;
+            left: -2000px;
+        }
+        .family-pic-02{
+            position: relative;
+            right: -2000px;
+        }
+        .family-pic-03{
+            position: relative;
+            left: -2000px;
+        }
     }
+    
 }
 .election-program{
     @include section-skew;
