@@ -107,6 +107,8 @@ header {
     transform: skewY(-4deg);
     display: flex;
     justify-content: center; }
+    .election-program .election-program-content .election-prog-01, .election-program .election-program-content .election-prog-02, .election-program .election-program-content .election-prog-03 {
+      display: none; }
 
 .contact {
   z-index: 1;

@@ -9,6 +9,9 @@ $(document).ready(function () {
     const $familyPic01 = $('.family-pic-01');
     const $familyPic02 = $('.family-pic-02');
     const $familyPic03 = $('.family-pic-03');
+    const $electionProg01 = $('.election-prog-01');
+    const $electionProg02 = $('.election-prog-02');
+    const $electionProg03 = $('.election-prog-03');
 
     function navHide() {
         $getNavCollapse.collapse('hide');
@@ -72,6 +75,34 @@ $(document).ready(function () {
     $window.on('scroll', familyImage01Visibility);
     $window.on('scroll', familyImage03Visibility);
     $window.on('scroll', familyImage02Visibility);
+
+    function electionProg01Visibility() {
+        if ($(this).scrollTop() > 1600) {
+            $electionProg01.fadeIn(1500);
+        }
+    };
+    $window.on('scroll', electionProg01Visibility);
+    
+    function electionProg02Visibility() {
+        if ($(this).scrollTop() > 1850) {
+            $electionProg02.fadeIn(1500);
+        }
+    };
+    $window.on('scroll', electionProg02Visibility);
+
+    function electionProg03Visibility() {
+        if ($(this).scrollTop() > 2050) {
+            $electionProg03.fadeIn(1500);
+        }
+    };
+    $window.on('scroll', electionProg03Visibility);
+
+    function checkPos() {
+        
+        console.log('Ypos', $window.scrollTop())
+    };
+
+    $window.on('scroll', checkPos);
 
 });
 
