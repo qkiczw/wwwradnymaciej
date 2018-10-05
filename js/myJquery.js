@@ -19,15 +19,15 @@ $(document).ready(function () {
     $getLink.on('click', navHide);
 
     //subtracts px from id on small screens
-    function mobileWidth() {
-        const windowWidth = $(window).width();
-        if ( windowWidth <= 768){
-            return 100;
-        }
-        else {
-            return 0;
-        }
-    }
+    // function mobileWidth() {
+    //     const windowWidth = $(window).width();
+    //     if ( windowWidth <= 768){
+    //         return 100;
+    //     }
+    //     else {
+    //         return 0;
+    //     }
+    // }
 
     function scrollToSection() {
         const animationTime = 700;
@@ -37,7 +37,7 @@ $(document).ready(function () {
             .addClass('active')
             .siblings()
             .removeClass('active');
-        $page.animate({ scrollTop: $(anchor).offset().top - mobileWidth()}, animationTime);
+        $page.animate({ scrollTop: $(anchor).offset().top }, animationTime);
     }
     $navLinks.on('click', scrollToSection);
 
